@@ -1,0 +1,8 @@
+<span class="wds-select__label">{{ label }}</span>
+<div class="wds-select">
+    <div class="wds-select__selected-option">{{ selectedOption }}</div>
+    <ul class="wds-select__options-list">
+      <li *ngFor="let option of options" (click)="selectOption(option)">{{ option }}</li>
+    </ul>
+    <img src="assets/arrow.svg" alt="seta" />
+  </div>

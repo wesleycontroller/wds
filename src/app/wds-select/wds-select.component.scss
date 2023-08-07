@@ -1,0 +1,41 @@
+.wds-select {
+    position: relative;
+    width: 200px;
+    border: 1px solid #ccc;
+    padding: 5px;
+    cursor: pointer;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+
+    :hover &__options-list {
+        display: block;
+    }
+
+    &__selected-option {
+        font-weight: bold;
+    }
+
+    &__options-list {
+        position: absolute;
+        top: 100%;
+        left: 0;
+        right: 0;
+        background-color: #fff;
+        border: 1px solid #ccc;
+        list-style: none;
+        padding: 0;
+        margin: 0;
+        display: none;
+
+        li {
+            padding: 5px;
+            cursor: pointer;
+        }
+
+        li:hover {
+            background-color: #f0f0f0;
+        }
+    }
+}
